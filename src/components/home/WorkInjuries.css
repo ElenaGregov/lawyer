@@ -1,0 +1,210 @@
+.work-injuries {
+  padding: 150px 0;
+  background: var(--color-navy);
+  color: var(--color-ivory);
+  min-height: 100svh;
+}
+
+.work-injuries-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(247, 245, 240, 0.14);
+}
+
+.work-injuries-header .section-label {
+  margin: 0;
+}
+
+.work-injuries-number {
+  color: rgba(247, 245, 240, 0.35);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.work-injuries-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr);
+  gap: 110px;
+  padding-top: 70px;
+}
+
+.work-injuries-eyebrow {
+  display: block;
+  margin-bottom: 25px;
+  color: var(--color-gold);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+}
+
+.work-injuries-intro h2 {
+  max-width: 800px;
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(52px, 5.5vw, 76px);
+  font-weight: 400;
+  line-height: 0.96;
+  letter-spacing: -0.04em;
+}
+
+.work-injuries-intro h2 em {
+  color: var(--color-gold);
+  font-style: normal;
+}
+
+.work-injuries-intro > p {
+  max-width: 570px;
+  margin: 38px 0 0;
+  color: rgba(247, 245, 240, 0.58);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.work-injuries-services {
+  padding-top: 55px;
+}
+
+.work-injuries-services-label {
+  margin: 0 0 28px;
+  color: rgba(247, 245, 240, 0.45);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.17em;
+}
+
+.work-injuries-services ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid rgba(247, 245, 240, 0.14);
+}
+
+.work-injuries-services li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 17px 0;
+  border-bottom: 1px solid rgba(247, 245, 240, 0.14);
+  color: rgba(247, 245, 240, 0.72);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.work-injuries-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 21px;
+  width: 21px;
+  height: 21px;
+  border: 1px solid var(--color-gold);
+  border-radius: 50%;
+  color: var(--color-gold);
+}
+
+.work-injuries-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 13px;
+  margin-top: 32px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(180, 154, 108, 0.7);
+  color: var(--color-ivory);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  transition:
+    gap 180ms ease,
+    color 180ms ease;
+}
+
+.work-injuries-link:hover {
+  gap: 18px;
+  color: var(--color-gold);
+}
+
+.work-injuries-bottom {
+  display: grid;
+  grid-template-columns: 90px minmax(0, 1fr);
+  gap: 30px;
+  margin-top: 120px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(247, 245, 240, 0.14);
+}
+
+.work-injuries-bottom-number {
+  color: var(--color-gold);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.work-injuries-bottom-content strong {
+  display: block;
+  max-width: 650px;
+  font-family: var(--font-serif);
+  color: var(--color-ivory);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.work-injuries-bottom-content p {
+  max-width: 520px;
+  margin: 12px 0 0;
+  color: rgba(247, 245, 240, 0.5);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .work-injuries {
+    padding: 110px 0;
+  }
+
+  .work-injuries-grid {
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .work-injuries-services {
+    padding-top: 0;
+  }
+
+  .work-injuries-bottom {
+    margin-top: 90px;
+  }
+}
+
+@media (max-width: 600px) {
+  .work-injuries {
+    padding: 90px 0;
+  }
+
+  .work-injuries-grid {
+    padding-top: 50px;
+  }
+
+  .work-injuries-intro h2 {
+    font-size: 46px;
+  }
+
+  .work-injuries-intro > p {
+    font-size: 15px;
+  }
+
+  .work-injuries-bottom {
+    grid-template-columns: 40px minmax(0, 1fr);
+    gap: 12px;
+    margin-top: 70px;
+  }
+
+  .work-injuries-bottom-content strong {
+    font-size: 24px;
+  }
+}

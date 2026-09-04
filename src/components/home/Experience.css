@@ -1,0 +1,340 @@
+
+.experience {
+  padding: 150px 0;
+  background: var(--color-ivory);
+  color: var(--color-navy);
+  min-height: 100svh;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: minmax(250px, 0.7fr) minmax(0, 1.3fr);
+  gap: 120px;
+  align-items: start;
+}
+
+/* --------------------------------
+   INTRO / YEAR
+--------------------------------- */
+
+.experience-intro {
+  padding-top: 8px;
+}
+
+.experience-intro .section-label {
+  margin-bottom: 65px;
+}
+
+.experience-number {
+  font-family: var(--font-serif);
+  color: var(--color-gold);
+  font-size: clamp(90px, 10vw, 145px);
+  font-weight: 400;
+  line-height: 0.75;
+  letter-spacing: -0.055em;
+}
+
+.experience-number-label {
+  margin: 25px 0 0;
+  color: rgba(25, 42, 62, 0.45);
+  font-size: 11px;
+  line-height: 1.65;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+/* --------------------------------
+   CONTENT
+--------------------------------- */
+
+.experience-content {
+  max-width: 720px;
+  text-align: justify;
+}
+
+.experience-content h2 {
+  margin: 0 0 42px;
+  font-family: var(--font-serif);
+  color: var(--color-navy);
+  font-size: clamp(50px, 5vw, 70px);
+  font-weight: 400;
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+}
+
+.experience-content h2 em {
+  color: var(--color-gold);
+  font-style: normal;
+}
+
+.experience-content p {
+  max-width: 650px;
+  margin: 0 0 20px;
+  color: rgba(25, 42, 62, 0.62);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.experience-content .experience-lead {
+  max-width: 600px;
+  margin-bottom: 36px;
+  color: rgba(25, 42, 62, 0.9);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* --------------------------------
+   EXPERIENCE STORY
+--------------------------------- */
+
+.experience-story {
+  margin-top: 0;
+}
+
+.experience-story > p {
+  margin-bottom: 0;
+}
+
+/* --------------------------------
+   DETAIL BLOCKS
+--------------------------------- */
+
+.experience-detail {
+  position: relative;
+  margin-top: 34px;
+  padding-left: 24px;
+  border-left: 1px solid rgba(180, 154, 108, 0.55);
+}
+
+.experience-detail-label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--color-gold);
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.17em;
+}
+
+.experience-detail p {
+  margin: 0;
+}
+
+/* --------------------------------
+   PARTNERS
+--------------------------------- */
+
+.experience-partners {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  margin-top: 18px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(23, 35, 47, 0.09);
+}
+
+.experience-partners span {
+  color: var(--color-navy);
+  font-family: var(--font-serif);
+  font-size: 15px;
+  line-height: 1.4;
+  opacity: 0.72;
+}
+
+.experience-partners span:not(:last-child)::after {
+  content: "·";
+  margin-left: 22px;
+  color: var(--color-gold);
+}
+
+/* --------------------------------
+   TEXT LINK
+--------------------------------- */
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 32px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(180, 154, 108, 0.65);
+  color: var(--color-navy);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  transition:
+    gap 180ms ease,
+    color 180ms ease;
+}
+
+.text-link:hover {
+  gap: 17px;
+  color: var(--color-gold);
+}
+
+/* --------------------------------
+   FACTS
+--------------------------------- */
+
+.experience-facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 120px;
+  border-top: 1px solid rgba(25, 42, 62, 0.14);
+}
+
+.experience-fact {
+  min-height: 150px;
+  padding: 28px 30px 20px 0;
+  border-right: 1px solid rgba(25, 42, 62, 0.14);
+}
+
+.experience-fact:not(:first-child) {
+  padding-left: 30px;
+}
+
+.experience-fact:last-child {
+  border-right: 0;
+}
+
+.experience-fact-number {
+  display: block;
+  font-family: var(--font-serif);
+  color: var(--color-navy);
+  font-size: 32px;
+  line-height: 1;
+}
+
+.experience-fact-label {
+  display: block;
+  max-width: 190px;
+  margin-top: 13px;
+  color: rgba(25, 42, 62, 0.42);
+  font-size: 10px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* --------------------------------
+   TABLET
+--------------------------------- */
+
+@media (max-width: 900px) {
+  .experience {
+    padding: 110px 0;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+    gap: 65px;
+  }
+
+  .experience-intro .section-label {
+    margin-bottom: 45px;
+  }
+
+  .experience-number {
+    font-size: 100px;
+  }
+
+  .experience-content h2 {
+    font-size: 52px;
+  }
+
+  .experience-facts {
+    margin-top: 90px;
+  }
+
+  .experience-detail {
+    margin-top: 30px;
+  }
+}
+
+/* --------------------------------
+   MOBILE
+--------------------------------- */
+
+@media (max-width: 600px) {
+  .experience {
+    padding: 90px 0;
+  }
+
+  .experience-grid {
+    gap: 50px;
+  }
+
+  .experience-number {
+    font-size: 82px;
+  }
+
+  .experience-content h2 {
+    margin-bottom: 32px;
+    font-size: 46px;
+  }
+
+  .experience-content .experience-lead {
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+
+  .experience-content p {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  /* Detail blocks */
+
+  .experience-detail {
+    margin-top: 27px;
+    padding-left: 18px;
+  }
+
+  .experience-detail-label {
+    margin-bottom: 9px;
+    font-size: 9px;
+  }
+
+  /* Partners */
+
+  .experience-partners {
+    gap: 6px 14px;
+    margin-top: 16px;
+    padding-top: 13px;
+  }
+
+  .experience-partners span {
+    font-size: 14px;
+  }
+
+  .experience-partners span:not(:last-child)::after {
+    margin-left: 14px;
+  }
+
+  /* Link */
+
+  .text-link {
+    margin-top: 28px;
+  }
+
+  /* Facts */
+
+  .experience-facts {
+    grid-template-columns: 1fr;
+    margin-top: 70px;
+  }
+
+  .experience-fact,
+  .experience-fact:not(:first-child) {
+    min-height: auto;
+    padding: 22px 0;
+    border-right: 0;
+    border-bottom: 1px solid rgba(25, 42, 62, 0.14);
+  }
+
+  .experience-fact:last-child {
+    border-bottom: 0;
+  }
+}
+
